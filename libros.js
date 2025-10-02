@@ -12,6 +12,10 @@ function Registrarlibro(titulo,autor,estado) {
 Registrarlibro("La Sombra del Viento", "Carlos Ruiz Zafón", "disponible");
 
 function listarLibros() {
+    foreach (listarLibros.filter(libro => libro.estado === "disponible")) {
+        console.log(`Título: ${libro.titulo}, Autor: ${libro.autor}, Estado: ${libro.estado}`);
+    }
+    
 
 }
 
