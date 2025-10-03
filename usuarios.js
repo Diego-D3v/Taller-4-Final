@@ -21,8 +21,7 @@ function registrarUsuario(nombre, email) {
 function listarUsuarios() {
   console.log("Lista de usuarios:");
   usuarios.forEach((u) => console.log(`${u.nombre} (${u.email})`));
-  return nuevoUsuario;
+  return usuarios;
 }
  
-// Exportar funciones y array usuarios
 export { usuarios, registrarUsuario, listarUsuarios };
