@@ -1,6 +1,6 @@
 // main.js
 import { usuarios, registrarUsuario, listarUsuarios } from "./usuarios.js";
-import { libros, registrarLibro, listarLibros, listarLibrosDisponibles,listarLibrosAutor} from "./libros.js";
+import { libros, Registrarlibro, listarLibros, listarLibrosDisponibles,listarLibrosAutor} from "./libros.js";
 import { prestarLibro, devolverLibro } from "./prestamos.js";
 
 // USUARIOS
@@ -10,7 +10,7 @@ listarUsuarios();
 
 // LIBROS
 listarLibros();
-registrarLibro("La Sombra del Viento", "Carlos Ruiz Zafón");
+Registrarlibro("La Sombra del Viento", "Carlos Ruiz Zafón");
 listarLibrosDisponibles();
 listarLibrosAutor("Gabriel García Márquez")
 
