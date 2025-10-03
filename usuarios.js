@@ -14,12 +14,14 @@ function registrarUsuario(nombre, email) {
   };
   usuarios.push(nuevoUsuario);
   console.log(`Usuario registrado: ${nombre}`);
+  return nuevoUsuario;
 }
  
 // Función para listar todos los usuarios
 function listarUsuarios() {
   console.log("Lista de usuarios:");
   usuarios.forEach((u) => console.log(`${u.nombre} (${u.email})`));
+  return nuevoUsuario;
 }
  
 // Exportar funciones y array usuarios
