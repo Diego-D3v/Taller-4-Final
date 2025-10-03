@@ -18,12 +18,21 @@ function listarLibros() {
     });
 }
 
+function listarLibrosAutor(autor) {
+    libros.forEach(libros => {
+        if (libros.autor === autor) {
+            console.log(`titulo: ${libros.titulo}, autor: ${libros.autor}, estado: ${libros.estado}`);
+        }
+    });
+}
 function listarLibrosDisponibles() {
     console.log("Libros disponibles:");
     libros.filter(libro => libro.estado === "disponible")
         .forEach((libro, i) => {
             console.log(`${i + 1}. ${libro.titulo} - ${libro.autor}`);
         });
+
 }
 
-export { libros, Registrarlibro, listarLibros, listarLibrosDisponibles };
+listarLibrosAutor("Gabriel García Márquez");
+export { libros, Registrarlibro, listarLibros, listarLibrosDisponibles, listarLibrosAutor };
