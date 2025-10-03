@@ -25,4 +25,4 @@ function listarUsuarios() {
 }
  
 // Exportar funciones y array usuarios
-export { prestarLibro, devolverLibro };
+export { usuarios, registrarUsuario, listarUsuarios };
