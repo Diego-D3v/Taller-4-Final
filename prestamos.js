@@ -39,4 +39,4 @@ function devolverLibro(titulo) {
   console.log(`El libro "${titulo}" ha sido devuelto.`);
 }
 
-export { prestarLibro, devolverLibro };
+export { prestarLibro, devolverLibro};
